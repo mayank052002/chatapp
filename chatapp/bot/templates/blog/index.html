@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot App</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bot/index.css' %}">
+</head>
+<body>
+
+<div class="chat-container">
+    <header class="chat-header">
+        <h1>Chatbot App</h1>
+    </header>
+    <main class="chat-box" id="chat-box">
+        <div class="message bot-message">Hi there</div>
+    </main>
+    <footer class="chat-footer">
+        <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+        <button id="send-button">Send</button>
+    </footer>
+</div>
+
+<script src="{% static 'js/chatbot1.js' %}"></script>
+</body>
+</html>
